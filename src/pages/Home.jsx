@@ -20,11 +20,11 @@ function Home() {
 
         const data = await response.json();
 
-        setArticles(data.articles.slice(1, 7));
+        setArticles(data.articles.slice(1, 7) || []);
         setFeatured(data.articles[0]);
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching news:", error);
+         console.error("Error fetching news:", error.response?.data || error);
         setLoading(false);
       }
     }
