@@ -7,7 +7,7 @@ The app includes category filtering, a featured article section, and a clean UI 
 
 
 1. Clone the repo:
-   git clone https://github.com/your-username/news-app.git
+   git clone https://github.com/SwiftCodes01/News-App.git
    After cloning, navigate into the project directory:
    cd your-repo-name
 
