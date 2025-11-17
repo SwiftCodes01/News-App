@@ -14,6 +14,12 @@ function FeaturedHero({ loading, featured, articles }) {
 
 
   if (loading) return <h1>Loading news ...</h1>;
+
+
+    if (articles.length === 0) {
+  return <p>API data cannot be displayed on deployed site due to NewsAPI free plan restrictions. Please run locally.</p>;
+}
+  
   return (
     <div className="max-w-5xl mx-auto px-6">
       <div className="hidden sm:flex gap-1 mb-6">
