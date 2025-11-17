@@ -8,7 +8,7 @@ function Header() {
       <div className="flex items-center h-15 justify-between max-w-7xl px-8 mx-auto">
         <div className="flex gap-8 items-center ">
           <Link to="/" className="font-bold text-2xl">
-            NewToday
+            NewsToday
           </Link>
           <ul className="hidden sm:flex space-x-7">
             <li>
