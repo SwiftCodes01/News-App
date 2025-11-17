@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import NewsDetails from "./pages/NewsDetails";
 
 function App() {
-  console.log(import.meta.env.VITE_API_KEY);
 
   return (
     <BrowserRouter>
