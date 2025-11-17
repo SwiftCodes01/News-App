@@ -32,7 +32,7 @@ function Header() {
           </ul>
         </div>
         <div className="flex items-center gap-3">
-          <form>
+          <form className="hidden sm:flex ">
             <input
               type="search"
               placeholder="Search"
