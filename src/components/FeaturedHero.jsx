@@ -14,7 +14,7 @@ function FeaturedHero({ loading, featured, articles }) {
   if (loading) return <h1>Loading news ...</h1>;
   return (
     <div className="max-w-5xl mx-auto px-6">
-      <div className="flex gap-1 mb-6">
+      <div className="hidden sm:flex gap-1 mb-6">
         {categories.map((c, idx) => (
           <button
             key={c}
