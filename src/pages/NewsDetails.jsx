@@ -20,11 +20,11 @@ function NewsDetails() {
 
         const data = await response.json();
 
-        setArticles(data.articles.slice(1, 3));
+        setArticles(data.articles.slice(1, 3) || []);
 
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching news:", error);
+         console.error("Error fetching news:", error.response?.data || error);
         setLoading(false);
       }
     }
