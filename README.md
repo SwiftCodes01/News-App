@@ -5,23 +5,36 @@ The app includes category filtering, a featured article section, and a clean UI 
 
 ## Installation Procedure
 
-Clone the Repository
-Open your terminal and run:
-git clone https://github.com/SwiftCodes01/News-App.git
-After cloning, navigate into the project directory:
-cd your-repo-name
 
-# Install Dependencies
-Install all required project packages by running:
-npm install
+1. Clone the repo:
+   git clone https://github.com/your-username/news-app.git
+   After cloning, navigate into the project directory:
+   cd your-repo-name
 
-# Create the Environment File
-In the root folder of the project, create a file named .env.
-Add your NewsAPI key inside the file:
 
-For Vite users: VITE_NEWS_API_KEY=your_api_key_here
+2. Install dependencies:
+   Install all required project packages by running:
+   npm install
 
-Start the Development Server
-Run the project locally using:
-npm run dev
+   
+3. Create a `.env` file:
+   In the root folder of the project, create a file named .env.
+   Add your NewsAPI key inside the file:
+   VITE_API_KEY=your_newsapi_key
+   
+4. Start development server:
+   npm run dev
+
 This will start the development server and open the application in your browser.
+
+
+
+## Note
+
+Due to the free NewsAPI Developer plan restrictions:
+- Requests from deployed websites (Netlify/Vercel/GitHub Pages) are blocked.
+- The API only works on localhost.
+- To see live data, run the app locally after setting your API key.
+
+
+
