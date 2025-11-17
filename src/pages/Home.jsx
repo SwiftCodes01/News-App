@@ -19,6 +19,7 @@ function Home() {
         );
 
         const data = await response.json();
+          console.log(data)
 
         setArticles(data.articles.slice(1, 7) || []);
         setFeatured(data.articles[0]);
